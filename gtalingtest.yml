@@ -1,0 +1,10 @@
+
+execution:
+- executor: gatling
+  scenario: sample
+
+scenarios:
+  sample:
+    script: /home/qauser01/.bzt/gatling-taurus/3.1.2/user-files/simulations/CardListAPI.scala
+    simulation: tests.gatling.CardListAPI
+    keepalive: true
